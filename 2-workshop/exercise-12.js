@@ -15,6 +15,18 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let primeCount = 0;
+  for(let i = 1; i <= 200; i++){
+    for(let k = 1; k <= i; k++){
+      if(i % k === 0){
+        primeCount++;
+      }
+    }
+    if(primeCount === 2){
+        console.log(i);
+      }
+    primeCount = 0
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -27,5 +39,5 @@ function exercise12() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
-
+//exercise12()
 module.exports = exercise12;

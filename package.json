@@ -18,7 +18,8 @@
   "homepage": "https://github.com/journey-education/m2-1-js--fundamentals-P1#readme",
   "dependencies": {
     "jest": "^26.1.0",
-    "jest-expect-message": "^1.0.2"
+    "jest-expect-message": "^1.0.2",
+    "node-fetch": "^3.0.0"
   },
   "jest": {
     "setupFilesAfterEnv": [

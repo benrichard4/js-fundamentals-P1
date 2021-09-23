@@ -15,6 +15,27 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  // 'i' keeping track of the row and 'j' is keeping track of the columns
+  let checkerboard = '';
+  for(let i = 1; i <= 8; i++){
+    for(let k = 1; k <=8; k++){
+      if(i % 2 !== 0){
+        if(k % 2 !== 0){
+          checkerboard = checkerboard +'#';
+        }else{
+          checkerboard = checkerboard +'_';
+        }
+      }else {
+        if(k % 2 !== 0){
+          checkerboard = checkerboard +'_';
+        }else{
+          checkerboard = checkerboard +'#';
+        }
+      }
+    }
+    console.log(checkerboard);
+    checkerboard = ''
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

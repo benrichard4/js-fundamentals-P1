@@ -20,6 +20,22 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let numToCalc = 50;
+  let sumCurrent = 1;
+  let sumOldCurrent;
+  let sumPrev = 0;
+    //i has to reach "numToCalc-3" because the first 3 (0,1,1) are taken into account when all the variables are initially set. 
+  //Otherwise it'd loop through 0=0+0 a bunch of times.
+  //It also assumes that "0" is the first number in the fibonaci sequence, as opposed to "1".
+  
+  for(let i = 0; i <= numToCalc-3; i++){
+    sumOldCurrent = sumCurrent;
+    sumCurrent = sumCurrent + sumPrev;
+    sumPrev = sumOldCurrent;
+    console.log(sumPrev+' '+sumCurrent);
+  }
+  console.log(sumCurrent);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -32,5 +48,5 @@ function exercise13() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-13
-
+exercise13()
 module.exports = exercise13;
